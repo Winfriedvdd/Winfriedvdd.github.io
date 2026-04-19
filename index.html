@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Winfried van den Dool</title>
+  <meta name="description" content="PhD candidate at QUVA Lab, University of Amsterdam. Research on computational efficiency in deep learning.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+  <!-- ── Header ────────────────────────────────────────── -->
+  <header class="header">
+    <img class="header-photo" src="assets/photo.jpg"
+         alt="Photo of Winfried van den Dool">
+    <div class="header-text">
+      <h1>Winfried van den Dool</h1>
+      <p class="tagline">
+        PhD candidate &middot; QUVA Lab, University of Amsterdam
+      </p>
+      <nav class="header-links">
+        <a href="mailto:w.v.s.o.vandendool@uva.nl">Email</a>
+        <a href="https://github.com/Winfriedvdd">GitHub</a>
+        <a href="https://scholar.google.com/citations?user=4Dk57BEAAAAJ">Google Scholar</a>
+        <a href="https://www.linkedin.com/in/winfriedvandendool/">LinkedIn</a>
+        <a href="assets/cv.pdf">CV (PDF)</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── About ─────────────────────────────────────────── -->
+  <section class="about">
+    <h2>About</h2>
+    <p>
+      While deep learning&rsquo;s capabilities are becoming more and more
+      astonishing, what fascinates me most is actually one of the things
+      it still lags behind on: efficiency. For contrast, on the hardware
+      side a human brain runs on roughly the power of a light bulb; on
+      the algorithmic side, classical mathematics for example can be
+      beautifully elegant. Modern AI, by comparison, is relatively brute
+      force. Regardless of the &ldquo;is scale all we need?&rdquo;
+      debate, I enjoy the efficiency problem for its own sake, and think
+      working on it could well lead to new insights for either camp.
+    </p>
+    <p>
+      I&rsquo;m a PhD candidate at the
+      <a href="https://ivi.fnwi.uva.nl/quva/">QUVA Lab</a>, University of
+      Amsterdam, supervised by
+      <a href="https://staff.fnwi.uva.nl/m.welling/">Max Welling</a>.
+      My work focuses on <strong>computational efficiency in deep
+      learning</strong>: hardware-aware learning, (vector-)quantization,
+      adaptive inference, and neural PDE solvers. Of course, when talking
+      efficiency, the
+      <a href="https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai">carbon-footprint
+      angle</a> is tempting to mention, but I think it&rsquo;s hard to tell
+      whether efficiency gains actually reduce it or
+      <a href="https://en.wikipedia.org/wiki/Jevons_paradox">just mean
+      people train bigger models</a>.
+    </p>
+    <p>
+      My background is in mathematics and physics, which led me to
+      appreciate analytic understanding over pure empirical observation.
+      I find efficiency problems often rewarding in this respect: one can
+      reason analytically about clever tricks, and with enough understanding
+      of the hardware, calculate and understand results rather than only
+      measuring and observing them. Earlier in my PhD I explored alternative
+      hardware ideas like memristors and spiking neural networks, before
+      moving to neural PDE solvers. My current focus is more on the
+      algorithmic side, working on vector quantization and linear attention.
+    </p>
+    <p>
+      Before the PhD I worked as a data scientist at PwC, and have also
+      done research internships at Rabobank and, more recently, at
+      Fermioniq on quantum algorithms for solving PDEs.
+    </p>
+  </section>
+
+  <!-- ── Publications ──────────────────────────────────── -->
+  <section>
+    <h2>Publications</h2>
+    <ul class="pub-list">
+      <li>
+        <span class="pub-title">Adaptive Mesh Quantization for Neural PDE Solvers</span><br>
+        <span class="pub-authors">Winfried van den Dool, Maksim Zhdanov, Yuki&nbsp;M.&nbsp;Asano, Max Welling</span><br>
+        <span class="pub-venue">TMLR, 2025 &middot; ICLR 2025 Journal-to-Conference certificate</span>
+        <p class="pub-summary">Instead of quantizing all mesh nodes uniformly, a small surrogate model assigns more bits to regions where the physics is harder and fewer where it&rsquo;s easy &mdash; up to 50% cheaper at the same accuracy.</p>
+        <div class="pub-links">
+          <a href="https://arxiv.org/abs/2511.18474">arXiv</a>
+          <a href="https://github.com/Winfriedvdd/AMQ">code</a>
+        </div>
+      </li>
+      <li>
+        <span class="pub-title">Efficient Neural PDE-Solvers using Quantization Aware Training</span><br>
+        <span class="pub-authors">Winfried van den Dool, Tijmen Blankevoort, Yuki&nbsp;M.&nbsp;Asano, Max Welling</span><br>
+        <span class="pub-venue">ICCV 2023 Workshop on Resource Efficient Deep Learning</span>
+        <p class="pub-summary">Neural PDE solvers usually save compute by lowering spatial resolution; this work shows precision is often the better thing to reduce.</p>
+        <div class="pub-links">
+          <a href="https://arxiv.org/abs/2308.07350">arXiv</a>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ── Footer ────────────────────────────────────────── -->
+  <footer>
+    <p>
+      <a href="mailto:w.v.s.o.vandendool@uva.nl">w.v.s.o.vandendool@uva.nl</a>
+      &middot;
+      <a href="https://github.com/Winfriedvdd">GitHub</a>
+      &middot;
+      <a href="https://www.linkedin.com/in/winfriedvandendool/">LinkedIn</a>
+      &middot;
+      <a href="http://amlab.science.uva.nl/people/WinfriedvandenDool/">AMLab</a>
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>
